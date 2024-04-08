@@ -1,0 +1,275 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    font-family: gilroy;
+}
+
+#main {
+    width: 100vw;
+    height: 100vh;
+    background-color: #dadada;
+    position: relative;
+    overflow-x: hidden;
+}
+.loader{
+    display: none;
+}
+
+#navbar {
+    position: fixed;
+    position: relative;
+    display: flex;
+    width: 72vw;
+    height: 11vh;
+    background-color: #fff;
+    position: absolute;
+    top: 5vh;
+    left: 29vh;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-around;
+    border-radius: 10vh;
+    cursor: pointer;
+
+}
+
+.right {
+    font-size: 2vh;
+    display: flex;
+    gap: 6vh;
+}
+
+.right p:hover {
+    color: #ff589e;
+    transition: cubic-bezier(0.19, 1, 0.22, 1)1s;
+}
+
+.right i {
+    display: none;
+}
+
+
+
+.page1 {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(./banner-bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#text {
+    position: absolute;
+    top: 46%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+    cursor: pointer;
+}
+
+h5 {
+    font-size: 5vh;
+    margin: 5vh;
+    line-height: 1.4;
+    font-weight: 400;
+
+}
+
+#hed {
+    font-weight: 600;
+}
+
+p {
+    line-height: 1.6;
+
+}
+
+button {
+    padding: 1.8vh 3vh;
+    color: #fff;
+    border: none;
+    border-radius: 3vh;
+    background-color: #ff589e;
+    margin-top: 4.5vh;
+    font-weight: 300;
+    font-size: 1.7vh;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #6413e7cd;
+    transition: cubic-bezier(0.19, 1, 0.22, 1)1s;
+
+}
+
+#cards {
+    position: absolute;
+    width: 72vw;
+    height: 40vh;
+    top: 93vh;
+    left: 50%;
+    display: flex;
+    transform: translate(-50%, -50%);
+    /* background-color: #d83939; */
+    justify-content: space-around;
+
+
+}
+
+.card {
+    width: 22vw;
+    height: 38vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-evenly;
+    text-align: center;
+    position: relative;
+    background-color: #fff;
+    border-radius: 3vh;
+    z-index: 99999999;
+    cursor: pointer;
+}
+
+
+#fe {
+    width: 13vh;
+    height: 13vh;
+    background-color: #6413e7cd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50vh;
+}
+
+#fe:hover {
+    background-color: #ff589e;
+    transition: cubic-bezier(0.19, 1, 0.22, 1)1s;
+
+}
+
+h3 {
+    font-weight: 500;
+    margin-top: -15px;
+}
+
+.text p {
+    font-size: 14px;
+    opacity: .6;
+    margin-top: 13px;
+}
+
+
+.page2 {
+    width: 100vw;
+    height: 100vh;
+    /* background-color: rgb(70, 121, 121); */
+}
+
+@media only screen and (min-width:300px) and (max-width:768px) {
+    #main{
+        position: relative;
+    }
+
+    #navbar {
+        position: absolute;
+        width: 90%;
+        left: 3vh;
+    }
+
+    .right p {
+        display: none;
+    }
+    .right i {
+        color: black;
+        display: flex;
+        font-size: 3.5vh;
+    }
+    .loader{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        width: 58.7vw;
+        height: 52vh;
+        background-color: #fff;
+        color: black;
+        top: 5vh;
+        /* left: 4vh; */
+        right: -100%;
+        z-index: 999999999999;
+        align-items: center;
+        justify-content: space-evenly;
+        font-size: 13px;
+        border-bottom-left-radius: 2.2vh;
+        transition: cubic-bezier(0.19, 1, 0.22, 1)1s;
+    }
+    .loader p{
+        opacity: .7;
+    }
+    .loader #close{
+        position: relative;
+        right: 9vh;
+        top: 3vh;
+        font-size: 3vh;
+    }
+    #text{
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+        width: 100%;
+        margin-top: -1.5vh;
+    }
+
+    #text h5{
+        width: 100%;
+        font-size: 3vh;
+        line-height: 1.3;
+    }
+    #text p{
+        width: 80%;
+        font-size: 13px;
+
+    }
+    button{
+        margin-bottom: -50px;
+    }
+
+    #cards{
+        width: 100vw;
+        height: 50vh;
+        display: flex;
+        flex-direction: column;
+        margin-top: 75vh;
+        align-items: center;
+        justify-content: space-around;
+
+    }
+    .card{
+        padding: 7.5vh;
+        width: 91vw;
+        height: 100vh;
+        display: flex;
+        margin: 2vh;
+
+    }
+
+    .card p{
+        width: 100vh;
+    }
+
+    #fe{
+        margin-bottom: 6vh;
+    }
+
+
+}
